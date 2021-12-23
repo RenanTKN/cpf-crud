@@ -6,7 +6,7 @@ const apikey = process.env.REACT_APP_MARVEL_API_KEY;
 const instance = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://git.heroku.com/cpf-crud-backend.git"
+      ? "https://cpf-crud-backend.herokuapp.com"
       : "http://localhost:5000",
   params: { apikey },
 });
